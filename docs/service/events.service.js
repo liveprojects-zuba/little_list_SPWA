@@ -46,7 +46,7 @@
             }
             
             // uncomment the below to test an error condition
-            result = null;
+            //result = null;
             return result;
         }
 
