@@ -24,13 +24,13 @@
             }
          });
         
-
+        //this is called from the HTML on ng-click. It is changing the state back to events_list
         vm.done = function(){
             $state.go('events_list');
         }
 
         var params = $stateParams;
-
+        //this is two way data binding which updates in the HTML page
         vm.event = eventsSrvc.getEventAt(params.selected);
 
         

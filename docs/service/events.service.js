@@ -45,8 +45,8 @@
                 result.push(createEvent("event " + index, date, postcode));
             }
             
-            //  uncomment the below to test an error condition
-            // result = null;
+            // uncomment the below to test an error condition
+            result = null;
             return result;
         }
 
@@ -83,7 +83,7 @@
         } 
 
         service.getEvents = function(){
-            return angular.copy(eventsArray);
+            return /*angular.copy*/eventsArray;
         }
 
         service.getNumEvents = function(){
@@ -91,7 +91,7 @@
         }
 
         service.getEventAt = function(index){
-            return angular.copy(eventsArray[index]);
+            return /*angular.copy*/eventsArray[index];
         }
 
 
